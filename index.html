@@ -72,20 +72,38 @@
       /* 👉 Task 2- Target the body element.
     Apply a font family of Arial to the body element.
     The font property is inherited by descendant (nested) elements. */
+      body {
+        font-family: Arial;
+      }
 
       /* 👉 Task 3- Target the element with id headerTop.
     Apply white color to the text, some padding using px or rem units, and a dark background color. */
+      #headerTop {
+        color: white;
+        background-color: darkcyan;
+        padding: 1.5rem;
+      }
 
       /* 👉 Task 4- Target the divs that are directly nested underneath the id headerTop.
     Make them display as inline block, instead of block.
     This will make them render on the same line. */
+      #headerTop div {
+        display: inline-block;
+      }
 
       /* 👉 Task 5- Target the spans that are nested inside the id headerTop.
     Make them have some margin on the right.
     This will prevent the spans from crashing against one another. */
+      #headerTop span {
+        margin-right: 1rem;
+      }
 
       /* 👉 Task 6- Target the first span nested inside the element with id headerTop.
     Make it have a font weight of bold, and transform the text to uppercase. */
+      #headerTop span:nth-of-type(1) {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
 
       /* 👉 Task 7- Target the id headerBottom.
     Give it a bottom border of 1 pixel, solid gray, and a little bit of padding using px or rem units. */
